@@ -1,19 +1,39 @@
+import React from 'react';
 import img from './img/demo.png'
+import Small from './Small';
 
-const Card =({title,desc})=>{
+const Card =({data})=>{
+
+  console.log(data);
+
 
    
 
 
 return(
-    <div class="card" style={{width:'18rem'}}>
-    <img class="card-img-top" src={img} alt="Card image cap"/>
-    <div class="card-body">
-      <h5 class="card-title">{title}</h5>
-      <p class="card-text">{desc}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+   <>
+    {
+      data.map((val,ind)=>{
+
+      return( 
+         <React.Fragment key={ind}>
+
+         <div className="card" style={{width:'18rem'}} >
+            <img className="card-img-top" src={img} alt="Card image cap"/>
+            <div className="card-body">
+              <h5 className="card-title">{val.title}</h5>
+              <p className="card-text">{val.desc}</p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
+
+            <Small title={val.title}/>
+          </div>
+         
+         </React.Fragment>
+)
+      })
+    }
+   </>
 )
 
 }
