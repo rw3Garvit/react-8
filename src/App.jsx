@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import { data } from './components/data'
 import Count from './components/Count'
+import Valid from './components/Valid'
 
 const App = () => {
 
@@ -25,7 +26,8 @@ const App = () => {
      
    </div> */}
 
-<Count/>
+{/* <Count/> */}
+<Valid/>
 
 {/* <About/> */}
     
