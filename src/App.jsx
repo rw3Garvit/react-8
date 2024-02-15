@@ -5,6 +5,8 @@ import About from './components/About'
 import { data } from './components/data'
 import Count from './components/Count'
 import Valid from './components/Valid'
+import Single from './components/Single'
+import Ref from './components/Ref'
 
 const App = () => {
 
@@ -27,7 +29,10 @@ const App = () => {
    </div> */}
 
 {/* <Count/> */}
-<Valid/>
+{/* <Valid/> */}
+
+{/* <Single/> */}
+<Ref/>
 
 {/* <About/> */}
     
