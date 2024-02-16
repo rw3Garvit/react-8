@@ -6,12 +6,6 @@ const Ref = () => {
     let fname = useRef()
   
 
-
-  
-
-   
-
-
     let submit=()=>{
 
         const data={
@@ -19,7 +13,6 @@ const Ref = () => {
         }
 
        console.log(data);
-
 
     }
 

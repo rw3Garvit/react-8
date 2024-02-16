@@ -7,6 +7,7 @@ import Count from './components/Count'
 import Valid from './components/Valid'
 import Single from './components/Single'
 import Ref from './components/Ref'
+import Revise from './components/Revise'
 
 const App = () => {
 
@@ -32,7 +33,9 @@ const App = () => {
 {/* <Valid/> */}
 
 {/* <Single/> */}
-<Ref/>
+{/* <Ref/> */}
+
+<Revise/>
 
 {/* <About/> */}
     
