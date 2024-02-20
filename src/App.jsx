@@ -8,6 +8,7 @@ import Valid from './components/Valid'
 import Single from './components/Single'
 import Ref from './components/Ref'
 import Revise from './components/Revise'
+import Crud from './components/Crud'
 
 const App = () => {
 
@@ -35,7 +36,8 @@ const App = () => {
 {/* <Single/> */}
 {/* <Ref/> */}
 
-<Revise/>
+{/* <Revise/> */}
+<Crud/>
 
 {/* <About/> */}
     
