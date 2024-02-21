@@ -9,6 +9,7 @@ import Single from './components/Single'
 import Ref from './components/Ref'
 import Revise from './components/Revise'
 import Crud from './components/Crud'
+import Effect from './components/Effect'
 
 const App = () => {
 
@@ -37,7 +38,8 @@ const App = () => {
 {/* <Ref/> */}
 
 {/* <Revise/> */}
-<Crud/>
+{/* <Crud/> */}
+<Effect/>
 
 {/* <About/> */}
     
