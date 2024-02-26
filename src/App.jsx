@@ -10,6 +10,8 @@ import Ref from './components/Ref'
 import Revise from './components/Revise'
 import Crud from './components/Crud'
 import Effect from './components/Effect'
+import Static from './components/Static'
+import First from './components/First'
 
 const App = () => {
 
@@ -39,7 +41,9 @@ const App = () => {
 
 {/* <Revise/> */}
 {/* <Crud/> */}
-<Effect/>
+{/* <Effect/> */}
+<Static/>
+<First />
 
 {/* <About/> */}
     

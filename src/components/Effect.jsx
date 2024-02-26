@@ -12,14 +12,24 @@ const Effect = () => {
  
 
 
-  useEffect(()=>{
+  // useEffect(()=>{
  
-   console.log("useeffect start");
-   setTimeout(() => {
-    setdata(data+1);
-  }, 1000);
+  //  console.log("useeffect start");
+  //  setTimeout(() => {
+  //   setdata(data+1);
+  // }, 1000);
     
-  },[val])
+  // })
+
+  
+  // useEffect(()=>{
+ 
+  //   console.log("useeffect start");
+  //   setTimeout(() => {
+  //    setdata(data+1);
+  //  }, 1000);
+     
+  //  },[val])
 
 
   return (
