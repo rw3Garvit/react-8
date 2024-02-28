@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './components/Card'
-import Navbar from './components/Navbar'
-import About from './components/About'
+
+
 import { data } from './components/data'
 import Count from './components/Count'
 import Valid from './components/Valid'
@@ -12,6 +12,13 @@ import Crud from './components/Crud'
 import Effect from './components/Effect'
 import Static from './components/Static'
 import First from './components/First'
+import Navbar from './components/Header/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import About from './components/pages/About'
+import Not from './components/Not'
+import Product from './components/pages/Product'
 
 const App = () => {
 
@@ -24,28 +31,40 @@ const App = () => {
 
   return (
     <>
-    {/* <Navbar/> */}
-   {/* <div className="row col-md-12">
-      <div className="col-md-3">
-         <Card data={data}/>
-      </div>
+         {/* <Navbar/> */}
+         {/* <div className="row col-md-12">
+            <div className="col-md-3">
+               <Card data={data}/>
+            </div>
+            
+         
+         </div> */}
+
+      {/* <Count/> */}
+      {/* <Valid/> */}
+
+      {/* <Single/> */}
+      {/* <Ref/> */}
+
+      {/* <Revise/> */}
+      {/* <Crud/> */}
+      {/* <Effect/> */}
+      {/* <Static/>
+      <First /> */}
+
+      {/* <About/> */}
+
+         <Navbar/>
+   
+         <Routes>
+            <Route path='/' exact element={<Home/>} />
+            <Route path='/about' exact element={<About/>}/>
+            <Route path='/contact' exact element={<Contact/>}/>
+            <Route path='/:id' exact element={<Product/>}/>
+            <Route path='*' exact element={<Not/>}/>
+         </Routes>
+
       
-     
-   </div> */}
-
-{/* <Count/> */}
-{/* <Valid/> */}
-
-{/* <Single/> */}
-{/* <Ref/> */}
-
-{/* <Revise/> */}
-{/* <Crud/> */}
-{/* <Effect/> */}
-<Static/>
-<First />
-
-{/* <About/> */}
     
     </>
   )
