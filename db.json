@@ -1,104 +1,14 @@
 {
   "post": [
     {
-      "id": 1,
-      "name": "garvit",
-      "age": 21
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "kartik",
       "age": 21
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "ram",
       "age": 21
-    },
-    {
-      "id": "6eeb",
-      "name": "demo",
-      "age": 22
-    },
-    {
-      "id": "1177",
-      "name": "demo",
-      "age": "123"
-    },
-    {
-      "id": "a9e8",
-      "name": "he;;p",
-      "age": "232"
-    },
-    {
-      "id": "5cd9",
-      "name": "asdas",
-      "age": "123123"
-    },
-    {
-      "id": "ec9d",
-      "name": "sdasda",
-      "age": "12"
-    },
-    {
-      "id": "0ccb",
-      "name": "asdawdasd",
-      "age": "1234"
-    },
-    {
-      "id": "9dc5",
-      "name": "qwdsfgh",
-      "age": "123"
-    },
-    {
-      "id": "d97f",
-      "name": "asdasd",
-      "age": "124"
-    },
-    {
-      "id": "6de5",
-      "name": "asdasd",
-      "age": "124"
-    },
-    {
-      "id": "b144",
-      "name": "qewryj",
-      "age": "13456"
-    },
-    {
-      "id": "ac8d",
-      "name": "asdasda",
-      "age": "123545"
-    },
-    {
-      "id": "ea36",
-      "name": "awrasertdfhfgj",
-      "age": "13454"
-    },
-    {
-      "id": "7bcd",
-      "name": "awrasertdfhfgj",
-      "age": "13454"
-    },
-    {
-      "id": "906b",
-      "name": "assdfasdf",
-      "age": "1234567"
-    },
-    {
-      "id": "586d",
-      "name": "q234we5tr",
-      "age": "2"
-    },
-    {
-      "id": "4f71",
-      "name": "q234we5tr",
-      "age": "2"
-    },
-    {
-      "id": "2127",
-      "name": "user",
-      "age": "123"
     }
   ]
 }
