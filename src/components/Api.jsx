@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Api = () => {
   let [data, setdata] = useState([]);
+  const [view, setview] = useState({})
   let name = useRef();
   let age = useRef();
 
@@ -39,6 +40,25 @@ const Api = () => {
     });
   };
 
+
+
+  //update-----------------------------------------------------------
+
+  //set view
+  let viewData = (index)=>{
+    console.log(index);
+
+    let user = data[index]
+
+   
+
+    setview(user)
+  }
+
+  console.log(view,"viewwwww");
+
+
+
   useEffect(() => {
     //get data
     fetchData();
@@ -48,7 +68,14 @@ const Api = () => {
     <>
       <input type="text" name="name" ref={name} />
       <input type="number" name="age" ref={age} />
+      <button onClick={handleSubmit}>Add</button><br />
+
+{/* update */}
+      <label htmlFor="">Update Data</label>
+      <input type="text" name="name" value={view.name} />
+      <input type="number" name="age" value={view.age}/>
       <button onClick={handleSubmit}>Add</button>
+cv   
 
       <div class="row">
         {data?.map((val, ind) => {
@@ -63,6 +90,9 @@ const Api = () => {
                 </p>
                 <button onClick={() => deleteData(val.id)} class="card-link">
                   Delete
+                </button>
+                <button class="card-link"  onClick={() => viewData(ind)}>
+                  update
                 </button>
               </div>
             </div>
