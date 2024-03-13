@@ -5,6 +5,9 @@ import { useState } from "react";
 const Api = () => {
   let [data, setdata] = useState([]);
   const [view, setview] = useState({})
+
+
+
   let name = useRef();
   let age = useRef();
 
@@ -47,17 +50,33 @@ const Api = () => {
   //set view
   let viewData = (index)=>{
     console.log(index);
-
     let user = data[index]
-
-   
-
     setview(user)
   }
 
-  console.log(view,"viewwwww");
+  let handleView=(e)=>{
+      setview({...view,[e.target.name]:e.target.value})
+  }
+
+  let handleUpdate = ()=>{
+    console.log(view);
+
+    axios.put(`http://localhost:3001/post/${view.id}`,view).then((res)=>{
+      console.log(res.data,"ressss");
+
+      setdata(data.map((val,ind)=>{
+        if(val.id==res.data.id)
+        {
+          return res.data
+        }else{
+          return val
+        }
+      }))
 
 
+
+    })
+  }
 
   useEffect(() => {
     //get data
@@ -70,12 +89,13 @@ const Api = () => {
       <input type="number" name="age" ref={age} />
       <button onClick={handleSubmit}>Add</button><br />
 
-{/* update */}
+      {/* update */}
       <label htmlFor="">Update Data</label>
-      <input type="text" name="name" value={view.name} />
-      <input type="number" name="age" value={view.age}/>
-      <button onClick={handleSubmit}>Add</button>
-cv   
+      <input type="text" name="name" value={view.name}  onChange={handleView}/>
+      <input type="number" name="age" value={view.age} onChange={handleView}/>
+      <button onClick={handleUpdate}>update</button>
+      <button>cancel</button>
+
 
       <div class="row">
         {data?.map((val, ind) => {
